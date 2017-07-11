@@ -9,13 +9,13 @@ stdenv.mkDerivation {
     inherit sha256 rev;
   };
 
-  phases = [ "unpackPhase", "installPhase" ];
+  phases = [ "unpackPhase" "installPhase" ];
 
   installPhase = ''
     mkdir $out
     cp -r . $out
     chmod -R 755 $out
-  ''
+  '';
 
   meta = {
     inherit description;
