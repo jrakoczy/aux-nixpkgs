@@ -12,7 +12,9 @@ stdenv.mkDerivation {
   phases = [ "unpackPhase", "installPhase" ];
 
   installPhase = ''
-
+    mkdir $out
+    cp -r . $out
+    chmod -R 755 $out
   ''
 
   meta = {
