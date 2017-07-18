@@ -1,4 +1,14 @@
-{ stdenv, name, buildInputs, sha256, rev, description }:
+{
+
+  stdenv,
+  fetchFromGitHub,
+  name,
+  buildInputs,
+  sha256,
+  rev,
+  description
+
+}:
 
 stdenv.mkDerivation {
   inherit name buildInputs;
