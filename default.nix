@@ -1,8 +1,8 @@
 { pkgs ? <nixpkgs> }:
 
+with pkgs;
 let
-  stdenv = pkgs.stdenv;
-  callPackage = pkgs.lib.callPackage;
+  callPackage = lib.callPackage;
 in
 {
   desktop-environment = callPackage ./pkgs/desktop-environment.nix { };
