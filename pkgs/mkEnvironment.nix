@@ -5,7 +5,7 @@ stdenv.mkDerivation {
 
   src = fetchFromGitHub {
     owner = "jrakoczy";
-    repo = changeme;
+    repo = "environments";
     inherit sha256 rev;
   };
 
