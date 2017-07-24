@@ -5,7 +5,8 @@ import ./mkEnvironment.nix {
 
   name = "desktop-environment";
   buildInputs = with pkgs; [
-
+    i3-gaps
+    mpv
   ];
 
   sha256 = "402e9ce4815330d6c731b937315d986e";
