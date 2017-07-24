@@ -29,6 +29,11 @@ stdenv.mkDerivation {
 
   meta = {
     inherit description;
+    longDescription = ''
+	  Contains all packages customized via configuration files (mainly
+	  dot-files). The files are stored in the Nix store and may be loaded
+	  into user's environment with use of envutils tools, in a handy manner
+	'';
     license = stdenv.lib.licenses.gpl3Plus;
   };
 }
