@@ -1,7 +1,7 @@
 { pkgs, stdenv, fetchFromGitHub }:
 
 import ./mkEnvironment.nix {
-  inherit stdenv, fetchFromGitHub;
+  inherit stdenv fetchFromGitHub;
 
   name = "remote-environment";
   buildInputs = with pkgs; [
