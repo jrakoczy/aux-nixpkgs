@@ -1,11 +1,11 @@
-{ pkgs, stdenv, fetchFromGitHub }:
+{ pkgs, stdenv, fetchFromGitHub, envutils }:
 
 import ./mkEnvironment.nix {
   inherit stdenv fetchFromGitHub;
 
   name = "remote-environment";
   buildInputs = with pkgs; [
-
+    envutils
   ];
 
   sha256 = "1bdbyjnsnkxfs85d7l7b41ncpnhglz6nasg94dzq0ydpnxaqfhiw";

@@ -1,4 +1,4 @@
-{ pkgs, stdenv, fetchFromGitHub }:
+{ pkgs, stdenv, fetchFromGitHub, envutils }:
 
 import ./mkEnvironment.nix {
   inherit stdenv fetchFromGitHub;
@@ -7,6 +7,7 @@ import ./mkEnvironment.nix {
   buildInputs = with pkgs; [
     i3-gaps
     mpv
+    envutils
   ];
 
   sha256 = "0lv2xlmxgbw2d21fwyi2vg4qs5hq456av2lj4qz6k01libfyi3qp";
