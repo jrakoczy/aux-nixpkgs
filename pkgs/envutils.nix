@@ -30,5 +30,5 @@ stdenv.mkDerivation {
       envdel - delete the previously loaded environment.
     '';
     license = stdenv.lib.licenses.gpl3Plus;
-  }
+  };
 }
