@@ -15,7 +15,7 @@ stdenv.mkDerivation {
   installPhase = ''
     target="$out"/bin
     mkdir -p "$target"
-    install -m 755 * "$target"
+    find . -type f -exec install -m 755 {} "$target" \;
   '';
 
   meta = {
