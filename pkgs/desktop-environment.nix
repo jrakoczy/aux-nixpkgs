@@ -10,8 +10,8 @@ import ./mkEnvironment.nix {
     envutils
   ];
 
-  sha256 = "0lv2xlmxgbw2d21fwyi2vg4qs5hq456av2lj4qz6k01libfyi3qp";
-  rev = "159e0a7c62729270f7e1aeb9565873473a2712a2";
+  sha256 = "0r9lgbyy94h50afy94065m9nnk8hwa3dxqp26h53ci64mz44w5ri";
+  rev = "e31e033f54927846942bb226787cbb1d0e9806e8";
 
   description = "A local machine user's environment.";
 }
