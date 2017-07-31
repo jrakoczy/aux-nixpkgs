@@ -1,13 +1,12 @@
-{ pkgs, stdenv, fetchFromGitHub, envutils }:
+{ pkgs, stdenv, fetchFromGitHub }:
 
-import ./mkEnvironment.nix {
+import ../lib/mkEnvironment.nix {
   inherit stdenv fetchFromGitHub;
 
   name = "desktop-environment";
   buildInputs = with pkgs; [
     i3-gaps
     mpv
-    envutils
   ];
 
   sha256 = "0r9lgbyy94h50afy94065m9nnk8hwa3dxqp26h53ci64mz44w5ri";
