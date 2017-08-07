@@ -6,8 +6,8 @@ stdenv.mkDerivation {
   src = fetchFromGitHub {
     owner = "jrakoczy";
     repo = "envutils";
-    sha256 = "1q1g1zfpcxag1nsq9hbv9hgmgb161qlqdva8fliicjnjak86ijlz";
-    rev = "f4295f9953793daa1ef318e3ddf7f4550c8636cb";
+    sha256 = "0l6f4iffbw3sdbx53djq12k1hps23rfjs2s1igqg72g5rdg1wds8";
+    rev = "ebf57804efbd1ea362c1046e9a1c868dc4f6d2c5";
   };
 
   phases = [ "unpackPhase" "installPhase" ];
