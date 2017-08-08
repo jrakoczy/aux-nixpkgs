@@ -13,7 +13,7 @@ stdenv.mkDerivation {
   phases = [ "unpackPhase" "installPhase" ];
 
   installPhase = ''
-    target="$out"/bin
+    target="$out/bin"
     mkdir -p "$target"
     find . -type f -exec install -m 755 {} "$target" \;
   '';
