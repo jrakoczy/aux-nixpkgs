@@ -42,16 +42,20 @@ channel. No rollbacks tho.
 Import it to a variable in your Nixos configuration file:
 
 ```nix
-pkgs = import <nixpkgs> { }; # Define whichever version of nixpkgs you want.
+{
+  pkgs = import <nixpkgs> { }; # Define whichever version of nixpkgs you want.
 
-jrakoczy-pkgs = import (
-    pkgs.fetchFromGitHub {
+  jrakoczy-pkgs = import
+    (
+      pkgs.fetchFromGitHub {
         owner = "jrakoczy";
         repo = "aux-nixpkgs";
         rev = ?; # Change me.
         sha256 = ?; # Change me.
-    })
+      }
+    )
     { inherit pkgs; };
+}
 ```
 
 If you care for maximum purity, then this is the way to go.
