@@ -1,7 +1,7 @@
-{ pkgs, stdenv, fetchFromGitHub, envutils, nix }:
+{ pkgs, stdenv, fetchFromGitHub, envutils }:
 
 import ../lib/mkEnvironment.nix {
-  inherit stdenv fetchFromGitHub envutils nix;
+  inherit stdenv fetchFromGitHub envutils;
 
   name = "desktop-environment";
   buildInputs = with pkgs; [

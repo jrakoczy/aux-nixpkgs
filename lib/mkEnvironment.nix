@@ -5,7 +5,6 @@
   name,
   buildInputs,
   envutils,
-  nix,
   sha256,
   rev,
   description
@@ -16,7 +15,6 @@ stdenv.mkDerivation {
   inherit name;
 
   buildInputs = buildInputs ++ [ envutils ];
-  nativeBuildInputs = [ nix ];
 
   src = fetchFromGitHub {
     owner = "jrakoczy";
@@ -27,16 +25,16 @@ stdenv.mkDerivation {
   phases = [ "unpackPhase" "installPhase" ];
 
   installPhase = ''
-    mkdir $out
+    mkdir -p "$out/bin"
     cp -r . $out
 
     # We need to hack this a little bit as I didn't find any other way to
     # expose buildInputs executables.
-    envutils_bin="$(nix-env -q --installed --no-name --out-path envutils)/bin"
+    envutils_bin='${envutils.outPath}/bin'
     cp -s "$envutils_bin/envdel" "$envutils_bin/envtest" "$out/bin"
     printf "#!/usr/bin/env sh\n envload ${name}" > "$out/bin/envload"
 
-    chmod -R 755 $out
+    chmod -R 755 "$out"
   '';
 
   meta = {
