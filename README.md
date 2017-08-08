@@ -33,6 +33,12 @@ Add a custom variable to `NIX_PATH`:
 ```bash
 export NIX_PATH="jrakoczy=https://github.com/jrakoczy/aux-nixpkgs/archive/master.tar.gz:$NIX_PATH"
 ```
+From now on you can refer to the packages set by typing `<jrakoczy>`. For
+instance to install `desktop-environment`, execute:
+
+```bash
+nix-env -f '<jrakoczy>' -i 'desktop-environment'
+```
 
 This is more convenient as you don't need to remember about updating the
 channel. No rollbacks tho.
