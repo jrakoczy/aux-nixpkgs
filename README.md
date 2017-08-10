@@ -2,7 +2,7 @@
 
 A set of my custom Nix packages.
 
-## How to import
+## Usage
 
 ### Option 1.
 
@@ -33,7 +33,7 @@ Add a custom variable to `NIX_PATH`:
 ```bash
 export NIX_PATH="jrakoczy=https://github.com/jrakoczy/aux-nixpkgs/archive/master.tar.gz:$NIX_PATH"
 ```
-From now on you can refer to the packages set by typing `<jrakoczy>`. For
+From now on you, can refer to the packages set by typing `<jrakoczy>`. For
 instance to install `desktop-environment`, execute:
 
 ```bash
@@ -45,7 +45,7 @@ channel. No rollbacks tho.
 
 ### Option 3.
 
-Import it to a variable in your Nixos configuration file:
+Import it as a variable in your NixOS configuration file:
 
 ```nix
 {
@@ -64,4 +64,4 @@ Import it to a variable in your Nixos configuration file:
 }
 ```
 
-If you care for maximum purity, then this is the way to go.
+If you aim for maximum purity, then this is the way to go.
