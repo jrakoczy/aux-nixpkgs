@@ -15,6 +15,7 @@ stdenv.mkDerivation {
   inherit name;
 
   buildInputs = buildInputs ++ [ envutils ];
+  nativeBuildInputs = [ nix ];
 
   src = fetchFromGitHub {
     owner = "jrakoczy";
