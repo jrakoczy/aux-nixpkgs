@@ -31,7 +31,8 @@ stdenv.mkDerivation {
     # We need to hack this a little bit as I didn't find any other way to
     # expose buildInputs executables.
     envutils_bin='${envutils.outPath}/bin'
-    cp -s "$envutils_bin/envdel" "$envutils_bin/envtest" "$out/bin"
+    cp -s "$envutils_bin/envdel" "$envutils_bin/envtest"\
+      "$envutils_bin/confirmation-prompt" "$out/bin"
     printf "#!/usr/bin/env sh\n $envutils_bin/envload ${name}" > "$out/bin/envload"
 
     chmod -R 755 "$out"
