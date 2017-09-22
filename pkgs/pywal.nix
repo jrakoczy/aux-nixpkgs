@@ -6,8 +6,8 @@ pkgs.python35Packages.buildPythonPackage rec {
   src = fetchFromGitHub {
     owner = "jrakoczy";
     repo = "pywal";
-    sha256 = "0n3j3ga5d14z58fpifrfm7m5as3q4bhicrkf5hz0fzqh3lzhb1ym";
-    rev = "9a34ee610bd864d39de49dc456078c7f335fc005";
+    sha256 = "1wwv7nk33rlhpx161ha4b9bcv788227krkpaarl2j7mzni24wl8x";
+    rev = "9ca6fc39e99d4f18a6fb8ac0654bcd678b725114";
   };
 
   propagatedBuildInputs = with pkgs; [
