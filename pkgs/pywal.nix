@@ -5,7 +5,7 @@ pkgs.python35Packages.buildPythonPackage rec {
 
   src = fetchFromGitHub {
     owner = "jrakoczy";
-    repo = "envutils";
+    repo = "pywal";
     sha256 = "0n3j3ga5d14z58fpifrfm7m5as3q4bhicrkf5hz0fzqh3lzhb1ym";
     rev = "9a34ee610bd864d39de49dc456078c7f335fc005";
   };
