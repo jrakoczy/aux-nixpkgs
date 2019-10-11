@@ -10,6 +10,8 @@ pkgs.python37Packages.buildPythonPackage rec {
     rev = "9ca6fc39e99d4f18a6fb8ac0654bcd678b725114";
   };
 
+  # In case of Python pkgs, run-time dependencies should go here instead
+  # of mere buildInputs.
   propagatedBuildInputs = with pkgs; [
     feh
     imagemagick
