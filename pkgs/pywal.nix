@@ -1,6 +1,6 @@
 { pkgs, stdenv, fetchFromGitHub }:
 
-pkgs.python37Packages.buildPythonPackage rec {
+pkgs.python35Packages.buildPythonPackage rec {
   name = "pywal";
 
   src = fetchFromGitHub {
