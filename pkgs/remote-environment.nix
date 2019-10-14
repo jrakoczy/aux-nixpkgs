@@ -8,7 +8,7 @@ import ../lib/mkEnvironment.nix {
 
   ];
 
-  sha256 = "0gq2g8ngcba2y8kza24rvaxra0xzwnng6p78myr6x0z6i7vyvnwn";
+  sha256 = "1j30vn67bmzyvqg9k1c5dkh3jxfkm9viq588jm5gxrwlwqf934fh";
   rev = "5c831eb5f440f7d1bbb570cdb0374847152302b7";
 
   description = "A remote machine user's environment.";
