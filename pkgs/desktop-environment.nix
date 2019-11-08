@@ -9,7 +9,7 @@ import ../lib/mkEnvironment.nix {
     mpv
   ];
 
-  sha256 = "0fycc3d2v6g8k3jbbg2xg9bv71whjkf43jjfy3dfxvplii0x6qhz";
+  sha256 = "0g75k8acjmc5687410q7grfy5drjn9n177zmx2i39vwcc8w3ls9p";
   rev = "eaa6349e096adfd00fdbe372f0733b8e9377a238";
 
   description = "A local machine user's environment.";
