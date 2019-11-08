@@ -7,7 +7,7 @@ stdenv.mkDerivation {
     owner = "jrakoczy";
     repo = "envutils";
     sha256 = "0411j2h4jkrdfff2hicix1jf15kxj8dcv80fa168v6wbkrkig95x";
-    rev = "728c75e47634199d88b40a8432c9e2e8495bd488";
+    rev = "5066e1fec0f4eccb20899cbcefdf30165a7bd69a";
   };
 
   phases = [ "unpackPhase" "installPhase" ];
@@ -32,3 +32,4 @@ stdenv.mkDerivation {
     license = stdenv.lib.licenses.gpl3Plus;
   };
 }
+
