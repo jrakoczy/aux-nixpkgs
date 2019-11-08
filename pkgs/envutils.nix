@@ -6,7 +6,7 @@ stdenv.mkDerivation {
   src = fetchFromGitHub {
     owner = "jrakoczy";
     repo = "envutils";
-    sha256 = "0411j2h4jkrdfff2hicix1jf15kxj8dcv80fa168v6wbkrkig95x";
+    sha256 = "0w6h5asif57a9xv226pg3zd30da7awiq38b6vwxz528p13sa5pn5";
     rev = "5066e1fec0f4eccb20899cbcefdf30165a7bd69a";
   };
 
